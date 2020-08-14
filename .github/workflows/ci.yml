@@ -35,7 +35,7 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
 
       - name: Install libusb (windows)
-        uses: lukka/run-vcpkg@v3
+        uses: lukka/run-vcpkg@master
         with:
           vcpkgArguments: 'libftdi1:x64-windows'
           vcpkgGitCommitId: '7aebb48' # 2020.01
